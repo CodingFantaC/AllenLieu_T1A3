@@ -1,51 +1,86 @@
+/* Default Settings */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-header {
-  background: rgba(202, 160, 92, 0.65);
-  position: fixed;
-  top: 0;
+:root {
+  --primary-color: rgba(202, 160, 92, 0.2);
+  --secondary-color: rgba(141, 97, 26, 0.7);
+  --overlay-color: rgba(110, 109, 107, 0.6);
+  --menu-speed: 0.75s;
+}
+
+img {
   width: 100%;
-  height: 60px;
-  z-index: 1;
 }
 
-header p {
-  position: absolute;
+/* Top Nav Bar */
+#top-navs {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(202, 160, 92, 0.3);
+  z-index: 2;
 }
 
-header p {
-  top: 20%;
+#top-navs .name-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr 15fr;
+      grid-template-columns: 10fr 15fr;
+  /* Nav section placement */
+  background: rgba(202, 160, 92, 0.3);
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
 }
 
-header p {
-  left: 2%;
+#top-navs .name-nav ul li {
+  list-style: none;
 }
 
-header p {
-  text-align: left;
+#top-navs .name-nav ul li a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
-header p {
+#top-navs .socials {
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
 }
 
-header p {
+/* Social Links Nav Bar */
+#top-navs .socials a {
+  -webkit-text-decoration: white;
+          text-decoration: white;
+  color: white;
+  font-size: 30px;
+}
+
+.name-nav a {
   text-decoration: none;
 }
 
-header p {
-  font-size: 25px;
+/* A L L E N  L I E U Nav */
+.name-nav {
+  list-style: none;
+  background: rgba(202, 160, 92, 0.65);
+  position: static;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
 }
 
-header p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
+/* Hamburger Nav */
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -77,19 +112,19 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* Hamburger Line */
 .menu-wrap .hamburger > div {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  -ms-flex: none;
+  flex: none;
   width: 100%;
   height: 2px;
   background: #fff;
@@ -97,11 +132,11 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -126,7 +161,7 @@ header p {
 /* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 /* Turns Lines Into X */
@@ -134,13 +169,13 @@ header p {
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /* Rotate On Hover When Checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 /* Show Menu */
@@ -150,9 +185,9 @@ header p {
 
 .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition-duration: var(--menu-speed);
-          transition-duration: var(--menu-speed);
+  transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -173,11 +208,11 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .menu-wrap .menu > div {
@@ -189,16 +224,16 @@ header p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  -ms-flex: none;
+  flex: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -228,20 +263,6 @@ header p {
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: var(--secondary-color);
-}
-
-:root {
-  --primary-color: rgba(202, 160, 92, 0.2);
-  --secondary-color: rgba(141, 97, 26, 0.7);
-  --overlay-color: rgba(110, 109, 107, 0.6);
-  --menu-speed: 0.75s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -280,14 +301,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
 }
@@ -319,16 +340,13 @@ body {
 footer {
   background: rgba(202, 160, 92, 0.3);
   border: 3px rgba(202, 160, 92, 0.3) solid;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 footer p {
   text-align: center;
-}
-
-footer p {
   color: white;
 }
 
