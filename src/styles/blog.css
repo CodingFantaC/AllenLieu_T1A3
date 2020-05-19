@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 
-/* ALLEN LIEU Home Nav */
 header {
-  background: rgba(117, 119, 119, 0.65);
+  background: rgba(19, 18, 18, 0.65);
   position: fixed;
   top: 0;
   width: 100%;
@@ -47,7 +46,6 @@ header p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Hamburger Menu Styling */
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -232,11 +230,10 @@ header p {
   color: var(--secondary-color);
 }
 
-/* About Content Styling */
 :root {
-  --primary-color: rgba(117, 119, 119, 0.65);
-  --secondary-color: rgba(56, 56, 56, 0.7);
-  --overlay-color: rgba(117, 119, 119, 0.65);
+  --primary-color: rgba(0, 0, 0, 0.2);
+  --secondary-color: rgba(0, 0, 0, 0.7);
+  --overlay-color: rgba(110, 109, 107, 0.6);
   --menu-speed: 0.75s;
 }
 
@@ -252,12 +249,12 @@ body {
   line-height: 1.4;
 }
 
-/* .container {
+.container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 0 3rem;
-} */
+}
 
 #showcase {
   background: var(--primary-color);
@@ -266,15 +263,9 @@ body {
   position: relative;
 }
 
-#showcase img {
-  border-radius: 50%;
-  margin-top: -200px;
-  width: 95%;
-}
-
 #showcase:before {
   content: '';
-  background: url("../img/fred-kearney-V-3QSiPvhvs-unsplash.jpg") no-repeat center center/cover;
+  background: url("../img/tomi-vadasz-Bv16GPrtm0I-unsplash.jpg") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -302,7 +293,7 @@ body {
 }
 
 #showcase h1 {
-  font-size: 14px;
+  font-size: 4rem;
 }
 
 #showcase h3 {
@@ -312,7 +303,7 @@ body {
 .btn {
   display: inline-block;
   border: none;
-  background-color: rgba(56, 56, 56, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
@@ -326,8 +317,8 @@ body {
 }
 
 footer {
-  background: rgba(117, 119, 119, 0.65);
-  border: 3px rgba(117, 119, 119, 0.65) solid;
+  background: rgba(0, 0, 0, 0.3);
+  border: 3px rgba(0, 0, 0, 0.3) solid;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -423,15 +414,6 @@ footer p {
   }
   .col-12 {
     width: 100%;
-  }
-  .container {
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-  }
-  #showcase img {
-    width: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
