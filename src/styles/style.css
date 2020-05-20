@@ -40,11 +40,11 @@ img {
   z-index: 2;
 }
 
-#top-navs .name-nav ul li {
+#top-navs .name-nav ol li {
   list-style: none;
 }
 
-#top-navs .name-nav ul li a {
+#top-navs .name-nav ol li a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
   color: white;
@@ -63,6 +63,7 @@ img {
           text-decoration: white;
   color: white;
   font-size: 30px;
+  margin: 0 5px;
 }
 
 .name-nav a {
