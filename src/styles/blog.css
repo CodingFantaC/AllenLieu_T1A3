@@ -22,7 +22,7 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
 
@@ -266,10 +266,21 @@ img {
   color: var(--secondary-color);
 }
 
+#blog .blog-content {
+  color: black;
+  text-align: left;
+  padding-top: 100px;
+}
+
+#blog .blog-image {
+  width: 100px;
+  height: 100px;
+}
+
 .background-image {
   content: '';
   background: url("../img/tomi-vadasz-Bv16GPrtm0I-unsplash.jpg") no-repeat center center/cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -277,17 +288,19 @@ img {
   z-index: -1;
 }
 
-footer {
+/* Footer */
+#main-footer .footer-container p { /* Footer Content Styling */
   background: rgba(0, 0, 0, 0.3);
-  border: 3px rgba(0, 0, 0, 0.3) solid;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  font-size: 0.85rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0px;
 }
 
-footer p {
-  text-align: center;
-  color: white;
+#main-footer .footer-container { /* Footer Container Position */
+  display: flex;
+  justify-content: center;
 }
 
 /* For mobile phones: */
