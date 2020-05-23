@@ -7,8 +7,8 @@
 }
 
 :root {
-  --primary-color: rgba(0, 0, 0, 0.2);
-  --secondary-color: rgba(0, 0, 0, 0.7);
+  --primary-color: rgba(117, 119, 119, 0.65);
+  --secondary-color: rgba(117, 119, 119, 0.65);
   --overlay-color: rgba(110, 109, 107, 0.6);
   --menu-speed: 0.75s;
 }
@@ -22,7 +22,7 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(117, 119, 119, 0.65);
   z-index: 2;
 }
 
@@ -31,8 +31,10 @@ img {
   display: grid;
   -ms-grid-columns: 10fr 15fr;
       grid-template-columns: 10fr 15fr;
-  /* Nav section placement */
-  background: rgba(0, 0, 0, 0.3);
+  /* Nav Bar Content Position */
+  background: rgba(117, 119, 119, 0.65);
+  width: 100%;
+  height: 60px;
   padding: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -53,7 +55,7 @@ img {
 
 #top-navs .socials {
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   color: white;
 }
 
@@ -68,17 +70,6 @@ img {
 
 .name-nav a {
   text-decoration: none;
-}
-
-/* A L L E N  L I E U Nav */
-.name-nav {
-  list-style: none;
-  background: rgba(0, 0, 0, 0.65);
-  position: static;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  z-index: 2;
 }
 
 /* Hamburger Nav */
@@ -266,20 +257,7 @@ img {
   color: var(--secondary-color);
 }
 
-/* About Content Styling */
-:root {
-  --primary-color: rgba(117, 119, 119, 0.65);
-  --secondary-color: rgba(56, 56, 56, 0.7);
-  --overlay-color: rgba(117, 119, 119, 0.65);
-  --menu-speed: 0.75s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+/* About Content */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -302,8 +280,7 @@ body {
 
 #showcase img {
   border-radius: 50%;
-  margin-top: -200px;
-  width: 95%;
+  width: 80%;
 }
 
 #showcase:before {
