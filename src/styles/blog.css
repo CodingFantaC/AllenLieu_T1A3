@@ -266,26 +266,17 @@ img {
   color: var(--secondary-color);
 }
 
-#blog .blog-content {
-  color: black;
+/* Blog Section */
+
+.blog-container {
+  color: rgb(0, 0, 0);
+  background: rgb(168, 197, 168);
   text-align: left;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
-#blog .blog-image {
-  width: 100px;
-  height: 100px;
-}
-
-.background-image {
-  content: '';
-  background: url("../img/tomi-vadasz-Bv16GPrtm0I-unsplash.jpg") no-repeat center center/cover;
-  position: fixed;
-  top: 0;
-  left: 0;
+.blog-post img {
   width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 /* Footer */
