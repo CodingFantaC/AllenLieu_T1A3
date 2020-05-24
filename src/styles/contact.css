@@ -268,7 +268,7 @@ img {
   color: var(--secondary-color);
 }
 
-/* Projects Section */
+/* Contact Section */
 
 h5 {
   font-size: 40px;
@@ -348,6 +348,7 @@ h6 {
 h6 a {
   font-size: 30px;
   color: rgb(0, 247, 255);
+  text-decoration: none;
 }
 
 
