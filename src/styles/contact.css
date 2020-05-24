@@ -52,8 +52,10 @@ img {
 }
 
 #top-navs .socials {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-self: right;
+  padding-right: 70px;
   color: white;
 }
 
