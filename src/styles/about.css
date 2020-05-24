@@ -336,6 +336,16 @@ body {
   opacity: 0.7;
 }
 
+.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.languages i {
+  font-size: 70px;
+}
+
 /* Footer */
 #main-footer .footer-container p { /* Footer Content Styling */
   background: rgba(117, 119, 119, 0.65);
